@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nkahrs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = "stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "css/main.css">
+</head>
+<body>
+    <nav class = "navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class = "container">
+            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                <img src = "images/logo.png" alt = "site icon">
+                <span class = " fw-lighter ms-2">nkahrs</span>
+            </a>
+            <div class = "order-lg-2 nav-btns">
+                <a class = "btn mt-2 text-decoration-none  text-dark" href="javascript:void(0)" onclick="showHide('loginform')">login</a>
+                <a class = "btn mt-2 text-decoration-none  text-dark" onclick="changeColor('loginform')">mode</a>
+            </div>
+
+
+            <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                <ul class = "navbar-nav mx-auto text-center">
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "index.html">start</a>
+                    </li>
+
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "index.html">heroes</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "./faq.html">F.A.Q</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<!--    login -->
+    <div class="iop" id="loginform">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Login</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Enter your password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Remember me</label>
+                        </div>
+
+                        <a href="#" class="text">Forgot password?</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" value="Login">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                        <span class="text">Not a member?
+                            <a href="#" class="text signup-link">Signup Now</a>
+                        </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="form signup">
+            <span class="title">Registration</span>
+
+            <form action="#">
+                <div class="input-field">
+                    <input type="text" placeholder="Enter your name" required>
+                    <i class="uil uil-user"></i>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Enter your email" required>
+                    <i class="uil uil-envelope icon"></i>
+                </div>
+                <div class="input-field">
+                    <input type="password" class="password" placeholder="Create a password" required>
+                    <i class="uil uil-lock icon"></i>
+                </div>
+                <div class="input-field">
+                    <input type="password" class="password" placeholder="Confirm a password" required>
+                    <i class="uil uil-lock icon"></i>
+                    <i class="uil uil-eye-slash showHidePw"></i>
+                </div>
+
+                <div class="checkbox-text">
+                    <div class="checkbox-content">
+                        <input type="checkbox" id="termCon">
+                        <label for="termCon" class="text">I accepted all terms and conditions</label>
+                    </div>
+                </div>
+
+                <div class="input-field button">
+                    <input type="button" value="Signup">
+                </div>
+            </form>
+
+            <div class="login-signup">
+                    <span class="text">Already a member?
+                        <a href="#" class="text login-link">Login Now</a>
+                    </span>
+            </div>
+        </div>
+    </div>
+    <div class="ask">
+        <h1>Frequently Asked Questions</h1>
+        <ul class="faq">
+            <li>
+                <h2>What is the purpose of this website?</h2>
+                <p>This website is designed to provide information about our company and the services we offer.</p>
+            </li>
+            <li>
+                <h2>How do I contact customer support?</h2>
+                <p>You can contact customer support by emailing support@company.com or by calling our toll-free number at 1-800-555-1234.</p>
+            </li>
+            <li>
+                <h2>Do you offer refunds?</h2>
+                <p>We offer refunds on a case-by-case basis. Please contact customer support for more information.</p>
+            </li>
+            <li>
+                <h2>What forms of payment do you accept?</h2>
+                <p>We accept all major credit cards, as well as PayPal and bank transfers.</p>
+            </li>
+        </ul>
+</div>
+
+<script src = "bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+<script src = "js/script.js"></script>
+</body>
+</html>
