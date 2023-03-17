@@ -26,7 +26,7 @@ function changeColor() {
         mode = 'white'
     }
     subElements.forEach((el) => {
-        el.style.background = mode === 'white' ? '#fff' : 'rgba(33,37,41,0.73)'
+        el.style.background = mode === 'white' ? '#fff' : 'rgba(16,15,15,0.73)'
     })
 }
 
